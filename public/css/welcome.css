@@ -1,0 +1,51 @@
+
+            html, body {
+                
+                background-image: url('/images/Aniela+Justin-3.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 0px -100px;
+                /*color: #1f5c7a;*/
+                /*color: #D4AF37;*/
+                color:#f9e686;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+
+                height: 100%;
+                width: 100%;
+
+            }
+
+            .content {
+                text-align: center;
+                text-shadow: 1px 1px 10px rgba(12, 36, 48, 1);
+                margin-top: 155px;
+            }
+
+            .title {
+                font-size: 84px;
+                font-family: 'Snell Roundhand', cursive;
+
+            }
+
+            .title p{
+                margin-bottom: 0px;
+            }
+            .date{
+                font-size: 50px;
+            }
+            .subtitle{
+                font-size: 20px;
+                font-family: 'Nunito', sans-serif;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+            canvas{
+                position:absolute;
+                bottom:0; right:0;
+                z-index:1;
+            }

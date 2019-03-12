@@ -2,6 +2,11 @@
 
 @push('styles')
     <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+@endpush
+
+@push('head')
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 @endpush
 
 @section('content')
@@ -86,6 +91,10 @@
         $(document).ready(function(){
           heartsAnimation.initialize();
         });
+        </script>
+       
+        <script>
+          AOS.init();
         </script>
         
 @endsection

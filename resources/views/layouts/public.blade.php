@@ -8,9 +8,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
-
+       
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
         <style>
@@ -40,12 +40,6 @@
                 top: 18px;
             }
 
-            .title {
-                font-size: 84px;
-                font-family: 'Snell Roundhand', cursive;
-
-            }
-
             .links > a {
                 color: #1f5c7a;
                 text-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
@@ -70,8 +64,7 @@
                 <a href="#">RSVP</a>
             </div>
 
-            <main class="py-4">
                 @yield('content')
-            </main>
+          
     </body>
 </html>

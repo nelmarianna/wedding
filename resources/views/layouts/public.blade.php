@@ -6,15 +6,19 @@
 
         <title>A+J Forever <3 </title>
 
+
+          <script src="{{ asset('js/bootstrap.js') }}" defer></script>
+          <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
         <!-- Fonts -->
+
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
-       
+
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
         <style>
-      
+
             .full-height {
                 height: 100vh;
             }
@@ -58,13 +62,13 @@
             <div class="top-left links">
                 <a href="/">Home</a>
                 <a href="#">Wedding</a>
-                <a href="/our-story">Bridal Party</a>
+                <a href="/public">Bridal Party</a>
                 <a href="/accommodations">Accommodations</a>
                 <a href="#">Photos </a>
                 <a href="#">RSVP</a>
             </div>
 
                 @yield('content')
-          
+
     </body>
 </html>

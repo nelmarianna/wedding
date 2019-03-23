@@ -65,7 +65,7 @@
                 <a href="/public">Bridal Party</a>
                 <a href="/accommodations">Accommodations</a>
                 <a href="#">Photos </a>
-                <a href="#">RSVP</a>
+                <a href="/rsvp">RSVP</a>
             </div>
 
                 @yield('content')

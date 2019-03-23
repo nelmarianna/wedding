@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -24,3 +25,13 @@ Route::get('/accommodations', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('guests','GuestController');
+Route::post('/uploadFile', 'GuestController@uploadFile');
+Route::get('/guests/upload', function(){
+  return view('guests/upload');
+});
+Route::get('rsvp', function(){
+	return view('guests/rsvp');
+});
+Route::post('/rsvp','GuestController@rsvp');

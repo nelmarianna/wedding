@@ -57,6 +57,7 @@
         </style>
          @stack('styles')
     </head>
+    @guest
     <body>
          <div class="flex-center position-ref full-height">
             <div class="top-left links">
@@ -71,4 +72,6 @@
                 @yield('content')
 
     </body>
+    @else
+    @endguest
 </html>

@@ -21,12 +21,15 @@
 
             @foreach($details as $guest)
             <tr>
-               @if(count($guest)>3)
-                <td>{{$guest->firstName}} {{$guest->lastName}}</td>
+              @if(isset($guest->invitationName))
+              <td>{{$guest->invitationName}}</td>
+
+              @elseif(isset($guest->firstName))
+              <td>{{$guest->firstName}} {{$guest->lastName}}</td>
+              <td><a href="{{ route('guests.edit',$guest->id)}}" class="btn btn-default">Select</a></td>
               @endif
-              @if(count($guest[0])<=3)
-                  <td>{{$guest->invitationName}}</td>
-              @endif
+
+
             </tr>
             @endforeach
 

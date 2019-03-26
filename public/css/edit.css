@@ -1,0 +1,17 @@
+h1{
+    font-family: 'Great Vibes', cursive;
+}
+.center{
+  margin:auto;
+  width:auto;
+}
+.rsvp label, .custom-checkbox label{
+  padding-left: 20px;
+}
+.rsvp div{
+  margin:0px !important;
+}
+
+label{
+  width:auto;
+}

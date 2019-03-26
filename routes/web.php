@@ -31,7 +31,8 @@ Route::post('/uploadFile', 'GuestController@uploadFile');
 Route::get('/guests/upload', function(){
   return view('guests/upload');
 });
-Route::get('rsvp', function(){
+Route::get('/rsvp', function(){
 	return view('guests/rsvp');
 });
+Route::get('/rsvpform', 'GuestController@rsvpedit')->name('rsvpform');
 Route::post('/rsvp','GuestController@rsvp');

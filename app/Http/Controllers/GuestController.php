@@ -80,6 +80,7 @@ class GuestController extends Controller
         return view('guests.edit', compact('guest'));
     }
 
+  
     /**
      * Update the specified resource in storage.
      *
@@ -217,9 +218,9 @@ class GuestController extends Controller
     $q = $request->get('q');
      $guest = Guests::where('firstName','LIKE','%'.$q.'%')->orWhere('lastName','LIKE','%'.$q.'%')->get();
      $invitation = Invitations::distinct()->where('invitationName','LIKE','%'.$q.'%')->get(['invitationName']);
-     if(count($invitation) > 0) return view('rsvp')->withDetails($invitation)->withQuery( $q )->withMessage('Invitations');
-     else if(count($guest)>0) return view('rsvp')->withDetails($guest)->withQuery( $q )->withMessage('Guests');
-     else return view('rsvp')->withMessage('No Matching Guest Information found. Try to search using the names as they are written on your invitation.');
+     if(count($invitation) > 0) return view('guests/rsvp')->with('details', $invitation)->with('message','Invitations');
+     else if(count($guest)>0) return view('guests/rsvp')->with('details', $guest)->with('message','Guests');
+     else return view('guests/rsvp')->with('message','No Matching Guest Information found. Try to search using the names as they are written on your invitation.');
   }
 
 }

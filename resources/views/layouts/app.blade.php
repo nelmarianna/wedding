@@ -19,7 +19,10 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+@guest
+  @else
 <body>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
@@ -39,7 +42,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        @guest
+
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
@@ -48,7 +51,7 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             </li>
-                        @else
+
                             <li class="nav-item">
                               <a  class="nav-link" href="{{ route('guests.index')}}" >Guests</a>
                             </li>
@@ -70,7 +73,7 @@
                                     </form>
                                 </div>
                             </li>
-                        @endguest
+
                     </ul>
                 </div>
             </div>
@@ -79,6 +82,8 @@
         <main class="py-4">
             @yield('content')
         </main>
+
     </div>
 </body>
+  @endguest
 </html>

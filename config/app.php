@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://justinandaniela.test'),
+    'url' => env('APP_URL', 'http://justinandanielaforever.ca'),
 
     /*
     |--------------------------------------------------------------------------

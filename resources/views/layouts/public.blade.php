@@ -65,7 +65,7 @@
             <div class="top-left links">
                 <a href="/">Home</a>
                 <a href="#">Wedding</a>
-                <a href="/public">Bridal Party</a>
+                <a href="/party">Bridal Party</a>
                 <a href="/accommodations">Accommodations</a>
                 <a href="#">Photos </a>
                 <a href="/rsvp">RSVP</a>

@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @push('styles')
-    <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/welcome.css') }}" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 @endpush
 
@@ -10,14 +10,14 @@
 @endpush
 
 @section('content')
-                
+
         <div id="top" class="content">
             <div class="title m-b-md">
                     <p>Aniela and Justin</p>
                     <p class="date">01&middot;06&middot;2019</p>
                     <p class="subtitle">Mississauga, ON</p>
-                </div>   
-            </div> 
+                </div>
+            </div>
         </div>
         <div id="Wedding" >
         </div>
@@ -92,9 +92,9 @@
           heartsAnimation.initialize();
         });
         </script>
-       
+
         <script>
           AOS.init();
         </script>
-        
+
 @endsection

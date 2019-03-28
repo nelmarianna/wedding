@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @push('styles')
-    <link href="{{ asset('css/party.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/party.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')

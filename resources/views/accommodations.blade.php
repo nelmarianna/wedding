@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @push('styles')
-    <link href="{{ asset('css/accommodations.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/accommodations.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -16,7 +16,7 @@
 		<p><b>Block Pricing:</b> $120-165 plus 13% tax, prices vary based on room type.</p>
 		<p>We have reserved 20 rooms in this block, reservations are on a first come first served basis.</p>
 		<p>Reservations can be made until <strong><u>May 1st, 2019</u></strong>.</p>
-		
+
 		<h2>Holiday Inn Express</h2>
 		<p><b>Block Rate Name:</b> Aniela Opolski and Justin Lapinski Wedding Group</p>
 		<p><b>Address:</b> 2750 High Point Drive, Milton ON, L9T 5G5</p>
@@ -24,7 +24,7 @@
 		<p><b>Block Pricing:</b> $134.99 plus HST </p>
 		<p>We have reserved 20 rooms in this block, reservations are on a first come first served basis.</p>
 		<p>Reservations can be made until <strong><u>May 10th, 2019</u></strong>.</p>
-		
+
 	</div>
 </div>
 @endsection

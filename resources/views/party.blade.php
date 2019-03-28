@@ -15,6 +15,8 @@
                 <h4>Ophelia John</h4>
                 <p>Maid of Honor</p>
                 <p>Ophelia and Aniela met in the ninth grade. Went to University of Ottawa together and have been best friends for almost 10 years.</p>
+                <p>I have know Justin and Aniela as a couple since their beginning back in high school. Over the last few years I've seen them go to school dances together, start university together, play on sports teams together, get competitive playing board games and video games together and celebrate five anniversaries together. Every happy memory I have of them smiling and laughing and holding hands does not compare to when they announced their engagement. I was at work when she sent the message and when I saw it I spent the next few minutes squealing and disrupting my coworkers telling everyone around me that my best friend was getting married. When she sent the pictures I zoomed in and saw their faces. The way Justin looked at Aniela when he was on one knee was incredible. His face was filled with joy and certainty and so much love. Then I looked at Aniela's face and it was reflecting the same thing. I've seen them smile at each other but this was so different. I have never seen either of them look so happy! I am so happy that God had these two meet because I know in my heart they will have a beautiful life together. It has been so magical seeing the teenagers I knew four years ago grow up together and fall in love and I am so excited to see how they look at each other on their Wedding day and for the rest of their lives.
+                </p>
             </div>
              <div>
                 <h4>Jennifer Hasko</h4>

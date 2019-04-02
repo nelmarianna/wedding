@@ -1,35 +1,26 @@
-
             html, body {
-                
                 background-image: url('/images/Aniela+Justin-3.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: 0px -100px;
-                /*color: #1f5c7a;*/
-                /*color: #D4AF37;*/
-                color:#f9e686;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 200;
                 height: 100vh;
                 margin: 0;
-
                 height: 100%;
                 width: 100%;
-
+                display:block;
             }
-
             .content {
                 text-align: center;
                 text-shadow: 1px 1px 10px rgba(12, 36, 48, 1);
-                margin-top: 155px;
+                height: 700px;
             }
-
             .title {
                 font-size: 84px;
                 font-family: 'Great Vibes', cursive;
-
+                margin:auto;
+                margin-top:480px;
+                color:#f9e686;
             }
-
             .title p{
                 margin-bottom: 0px;
             }
@@ -48,4 +39,14 @@
                 position:absolute;
                 bottom:0; right:0;
                 z-index:1;
+            }
+            #Wedding{
+              text-align:center;
+                font-family: 'Montserrat', sans-serif;
+                margin:100px;
+
+            }
+            #Wedding h1{
+                margin-top: 30px;
+                font-family: 'Great Vibes', cursive;
             }

@@ -45,9 +45,20 @@
                 left: 10px;
                 top: 18px;
             }
-
-            .links > a {
-                color: #1f5c7a;
+            /* .links{
+               background-color:rgba(255, 255, 255, 0.1);
+            } */
+          #navbar{
+            background-color:rgba(255, 255, 255, 0.22);
+            background: -webkit-linear-gradient(rgba(255,255,255,0.22) 88%, rgba(255,255,255,0));
+            background: -o-linear-gradient(rgba(255,255,255,0.22) 88%, rgba(255,255,255,0));
+            background: -moz-linear-gradient(rgba(255,255,255,0.22) 88%, rgba(255,255,255,0));
+            background: linear-gradient(rgba(255,255,255,0.22) 88%, rgba(255,255,255,0));
+            height:45px;
+            padding-bottom:5px;
+            }
+            #navbar a {
+                color: #1f5c7a !important;
                 text-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
                 padding: 0 25px;
                 font-size: 20px;
@@ -55,13 +66,34 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+
             }
+            #navbar a:hover {
+              color: #2c86b2 !important;
+              }
+            #navbar a.active {
+              color: #2c86b2 !important;
+            }
+
         </style>
          @stack('styles')
     </head>
     @guest
     <body>
-         <div class="flex-center position-ref full-height">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse fixed-top" id="navbar">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#Wedding">Wedding</a>
+            <!-- <a class="nav-item nav-link" href="/party">Bridal Party</a> -->
+            <a class="nav-item nav-link" href="/accommodations">Accommodations</a>
+            <a class="nav-item nav-link" href="/rsvp">RSVP</a>
+          </div>
+        </div>
+      </nav>
+
+         <!-- <div class="flex-center position-ref full-height">
             <div class="top-left links">
                 <a href="/">Home</a>
                 <a href="#">Wedding</a>
@@ -69,11 +101,21 @@
                 <a href="/accommodations">Accommodations</a>
                 <a href="#">Photos </a>
                 <a href="/rsvp">RSVP</a>
-            </div>
+            </div> -->
 
                 @yield('content')
 
     </body>
     @else
     @endguest
+
+    <script type="text/javascript">
+    $('.nav-item').onclick(function(this){
+      $('.nav-item .active').removeclass('active');
+      $(this).addClass('active');
+    });
+
+
+    });
+    </script>
 </html>

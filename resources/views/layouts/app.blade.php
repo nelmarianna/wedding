@@ -21,6 +21,7 @@
 </head>
 @guest
   @else
+  @endguest
 <body>
 
     <div id="app">
@@ -85,5 +86,5 @@
 
     </div>
 </body>
-  @endguest
+
 </html>

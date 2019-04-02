@@ -80,7 +80,7 @@ class GuestController extends Controller
         return view('guests.edit', compact('guest'));
     }
 
-  
+
     /**
      * Update the specified resource in storage.
      *

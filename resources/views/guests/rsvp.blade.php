@@ -1,5 +1,12 @@
 @extends('layouts.public')
+@push('styles')
+    <link href="{{ secure_asset('css/rsvp.css') }}" rel="stylesheet">
+      <link href="{{ asset('css/rsvp.css') }}" rel="stylesheet">
+@endpush
 @section('content')
+
+<div class="page">
+<div class="container">
 <form action="/rsvp" method="POST" role="search">
     {{ csrf_field() }}
     <div class="input-group">
@@ -11,8 +18,6 @@
         </span>
     </div>
 </form>
-
-<div class="container">
 
     @if(isset($details))
     <p> Please select your name below:</p>
@@ -36,9 +41,7 @@
         </tbody>
     </table>
     @endif
-      @if(!isset($details))
-      Not set
-      @endif
 
+</div>
 </div>
 @endsection

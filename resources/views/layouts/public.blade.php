@@ -75,7 +75,7 @@
         </style>
          @stack('styles')
     </head>
-    @guest
+
     <body>
 
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -93,16 +93,12 @@
                 @yield('content')
 
     </body>
-    @else
-    @endguest
+   
 
     <script type="text/javascript">
-    $('.nav-item').onclick(function(){
+    $('.nav-item').click(function(){
       $('.nav-item .active').removeclass('active');
       $(this).addClass('active');
-    });
-
-
     });
     </script>
 </html>

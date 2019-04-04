@@ -10,3 +10,22 @@
   width:500px;
   margin:auto;
 }
+
+body{
+	background-image: url('/images/Aniela+Justin_Engagement-61.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display:block;
+}
+
+#list{
+	font-family: 'Montserrat', sans-serif;
+	margin-top:50px;
+
+}

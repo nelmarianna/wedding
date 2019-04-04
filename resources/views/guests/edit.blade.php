@@ -1,5 +1,6 @@
   @extends('layouts.public')
   @push('styles')
+  <link href="{{ asset('css/edit.css') }}" rel="stylesheet">
       <link href="{{ secure_asset('css/edit.css') }}" rel="stylesheet">
   @endpush
 
@@ -48,7 +49,7 @@
               </div>
               <div class="form-group input-group">
                 <div class="custom-control custom-checkbox form-control">
-                  <input type="checkbox" class="custom-control-input" id="vegetarian"  value={{ $guest->vegetarian }} >
+                  <input type="checkbox" class="custom-control-input" id="vegetarian" name="vegetarian" value={{ $guest->vegetarian }}>
                   <label class="custom-control-label" for="vegetarian">Vegetarian</label>
                 </div>
               </div>
@@ -70,5 +71,14 @@
   <script type="text/javascript">
   var rsvp = {{ $guest->response }};
     $('input[type=radio][value='+rsvp+']').prop('checked', true);
+   
+    $('input[name=vegetarian]').on("click", function() {
+      $(this).prop("checked") ? $(this).val("1") : $(this).val("0");
+    })
+
+    if( $('input[name=vegetarian]').val()=="1"){
+       $('input[name=vegetarian]').prop('checked', true);
+    }
+
   </script>
   @endsection

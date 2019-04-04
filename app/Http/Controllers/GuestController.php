@@ -97,21 +97,26 @@ class GuestController extends Controller
           'response'=>'required'
         ]);
 
+
+
         $guest = Guests::find($id);
         $guest-> firstName = $request->get('firstName');
         $guest-> lastName = $request->get('lastName');
-        $guest-> phone = $request->get('phone');
+        $guest-> phone = ($request->get('phone')== '' ? '':$request->get('phone'));
         $guest-> response = $request->get('response');
-        $guest-> vegetarian = $request->get('vegetarian');
-        $guest-> otherDiet = $request->get('otherDiet');
-        $guest-> plusOne = $request->get('plusOne');
+        $guest-> vegetarian = $request->has('vegetarian');
+        $guest-> otherDiet = ($request->get('otherDiet')== '' ? '':$request->get('otherDiet'));
+
 
         $guest -> save();
         if($guest -> plusOne == true){
            return view('guests.create');
         }
         else{
-          return redirect('/home')->with('success', 'Guest saved!');
+          if($guest->response ==-1)
+            return redirect('/rsvp')->with('success', 'Thank you for your RSVP');
+          else
+            return redirect('/rsvp')->with('success', ' Thank you for your RSVP! We look forward to seeing you in June!.');
         }
     }
 
@@ -125,7 +130,7 @@ class GuestController extends Controller
     {
         $guest = Guests::find($id);
         $guest->delete();
-        return redirect('/guests')-with('success', 'Guest deleted!');
+        return redirect('/guests')->with('success', 'Guest deleted!');
     }
 
     public function uploadFile(Request $request)
@@ -221,7 +226,10 @@ class GuestController extends Controller
   public function rsvp(Request $request)
   {
       $q = $request->get('q');
-      $guest = Guests::where('firstName','LIKE','%'.$q.'%')->orWhere('lastName','LIKE','%'.$q.'%')->get();
+      $guest = Guests::where('response', 0 )->where(function ($query) use ($q) {
+                $query->where('firstName','LIKE','%'.$q.'%')->orWhere('lastName','LIKE','%'.$q.'%');
+              })->get();
+
      if(count($guest)>0) return view('guests/rsvp')->with('details', $guest)->with('message','Guests');
      else return view('guests/rsvp')->with('message','No Matching Guest Information found. Try to search using the names as they are written on your invitation.');
   }

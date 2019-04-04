@@ -4,6 +4,7 @@ h1{
 .center{
   margin:auto;
   width:auto;
+  margin-top:70px;
 }
 .rsvp label, .custom-checkbox label{
   padding-left: 20px;

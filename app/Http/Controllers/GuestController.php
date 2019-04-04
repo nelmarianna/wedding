@@ -107,7 +107,12 @@ class GuestController extends Controller
         $guest-> plusOne = $request->get('plusOne');
 
         $guest -> save();
-        return redirect('/guests')->with('success', 'Guest saved!');
+        if($guest -> plusOne == true){
+           return view('guests.create');
+        }
+        else{
+          return redirect('/home')->with('success', 'Guest saved!');
+        }
     }
 
     /**

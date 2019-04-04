@@ -1,3 +1,4 @@
+  @extends('layouts.public')
   @push('styles')
       <link href="{{ secure_asset('css/edit.css') }}" rel="stylesheet">
   @endpush
@@ -35,7 +36,7 @@
                   <input type="text" class="form-control" name="phone" value={{ $guest->phone }} />
               </div>
               <div class="form-group input-group rsvp">
-                  <label class="input-group-text">RSVP:</label>
+                  <label class="input-group-text">Response:</label>
                   <div class="custom-control custom-radio custom-control-inline form-control">
                         <input type="radio" id="yes" name="response" class="custom-control-input"  value="1">
                         <label class="custom-control-label" for="yes">Accept</label>
@@ -61,7 +62,7 @@
                   <input type="checkbox" class="form-control" name="plusOne" value={{ $guest->plusOne }} />
               </div>
 
-              <button type="submit" class="btn btn-primary">Update</button>
+              <button type="submit" class="btn btn-primary">Confirm</button>
           </form>
       </div>
   </div>

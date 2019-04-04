@@ -26,10 +26,7 @@
 
             @foreach($details as $guest)
             <tr>
-              @if(isset($guest->invitationName))
-              <td>{{$guest->invitationName}}</td>
-
-              @elseif(isset($guest->firstName))
+              @if(isset($guest->firstName))
               <td>{{$guest->firstName}} {{$guest->lastName}}</td>
               <td><a href="{{ route('guests.edit',$guest->id)}}" class="btn btn-default">Select</a></td>
               @endif

@@ -14,9 +14,9 @@
 
         <div id="top" class="content">
             <div class="title m-b-md">
-                    <p>Aniela and Justin</p>
-                    <p class="date">June 1st, 2019</p>
-                    <p class="subtitle">Mississauga, ON</p>
+                    <h1>Aniela and Justin</h1>
+                    <h3 class="date">June 1st, 2019</h3>
+                    <h5 class="subtitle">Mississauga, ON</h5>
                 </div>
             </div>
         </div>

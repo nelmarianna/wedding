@@ -215,11 +215,9 @@ class GuestController extends Controller
    }
   public function rsvp(Request $request)
   {
-    $q = $request->get('q');
-     $guest = Guests::where('firstName','LIKE','%'.$q.'%')->orWhere('lastName','LIKE','%'.$q.'%')->get();
-     $invitation = Invitations::distinct()->where('invitationName','LIKE','%'.$q.'%')->get(['invitationName']);
-     if(count($invitation) > 0) return view('guests/rsvp')->with('details', $invitation)->with('message','Invitations');
-     else if(count($guest)>0) return view('guests/rsvp')->with('details', $guest)->with('message','Guests');
+      $q = $request->get('q');
+      $guest = Guests::where('firstName','LIKE','%'.$q.'%')->orWhere('lastName','LIKE','%'.$q.'%')->get();
+     if(count($guest)>0) return view('guests/rsvp')->with('details', $guest)->with('message','Guests');
      else return view('guests/rsvp')->with('message','No Matching Guest Information found. Try to search using the names as they are written on your invitation.');
   }
 

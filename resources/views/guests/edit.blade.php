@@ -1,5 +1,3 @@
-  @extends('layouts.public')
-  @extends('layouts.app')
   @push('styles')
       <link href="{{ secure_asset('css/edit.css') }}" rel="stylesheet">
   @endpush

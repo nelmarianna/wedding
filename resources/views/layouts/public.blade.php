@@ -97,7 +97,7 @@
     @endguest
 
     <script type="text/javascript">
-    $('.nav-item').onclick(function(this){
+    $('.nav-item').onclick(function(){
       $('.nav-item .active').removeclass('active');
       $(this).addClass('active');
     });

@@ -82,7 +82,7 @@
         <div class="collapse navbar-collapse fixed-top" id="navbar">
           <div class="navbar-nav">
             <a class="nav-item nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#Wedding">Wedding</a>
+            <a class="nav-item nav-link" href="/#Wedding">Wedding</a>
             <!-- <a class="nav-item nav-link" href="/party">Bridal Party</a> -->
             <a class="nav-item nav-link" href="/accommodations">Accommodations</a>
             <a class="nav-item nav-link" href="/rsvp">RSVP</a>

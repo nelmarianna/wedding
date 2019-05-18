@@ -24,12 +24,14 @@
           <div class="container">
             <h1>The Ceremony</h1>
             <p>The ceremony will begin at 1pm.</p>
+            <p>Receiving line will be at the reception. Please do not bring flowers to the church. Thank you! </p>
             <div>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9725.304624821656!2d-79.71843622710121!3d43.557582005768985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b421e2094996f%3A0xd2e85f1eac6ec1a4!2sMerciful+Redeemer+Parish!5e0!3m2!1sen!2sca!4v1553964082234!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <h1>The Reception</h1>
             <p>Cocktail hour begins at 4:30 PM</p>
-            <a href="/rsvp" >RSVP</a>
+            <p>The reception space is considered an outdoor venue. Please be prepared for cooler weather at night.</p>
+            <p>Overnight parking at the venue is available and encouraged. If parking overnight please pick up your vehicle before 8am on June 2nd.</p>
             <div>
               <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15XrEvrIwXkrCaMp6cRn0GKPkEvqgG2ks" width="640" height="480"></iframe>
             </div>

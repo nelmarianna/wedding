@@ -35,6 +35,7 @@
             <div>
               <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15XrEvrIwXkrCaMp6cRn0GKPkEvqgG2ks" width="640" height="480"></iframe>
             </div>
+            <a href="https://www.bedbathandbeyond.ca/store/giftregistry/viewregistryguest/546858315?eventType=Wedding">Gift Registry</a>
           </div>
         </div>
 
